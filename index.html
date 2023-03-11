@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>my website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200&family=Roboto:ital,wght@1,300;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav>
+		<i class="fa-solid fa-layer-group lo"></i>
+		<div class="nav-items">
+			<ul class="nav-lists">
+				<li class="nav-item"><a href="">Home</a></li>
+				<li class="nav-item"><a href="">About</a></li>
+				<li class="nav-item"><a href="">Contact</a></li>
+				<li class="nav-item"><a href="">Services</a></li>
+				<li class="nav-item"><a href="">Partner</a></li>
+			</ul>	
+		</div>
+	</nav>
+	
+
+	<div class="container">
+		<div class="hero-container">
+			<h4 class="h4">Hi there!</h4>
+			<h1 class="h1">I am <span class="element"></span></h1>
+			<div class="social">
+				<a href="twitter.com"><i class="fa-brands fa-twitter so"></i> </a>
+				<a href=""><i class="fa-brands fa-facebook so"></i> </a>
+				<a href="3"><i class="fa-brands fa-github so"></i> </a>
+				<a href="3"><i class="fa-brands fa-tiktok so"></i> </a>
+			</div>
+			<br>
+			<button class="main-btn btn">Explore my Projects</button>
+		</div>
+	</div>
+	<footer>
+		<p>Copyright <span>
+  &copy;<script>document.write(new Date().getFullYear());</script> Jinonet Ltd
+</span></p>
+	</footer>
+	<script type="text/javascript" src="./main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<script>
+
+		var typed = new Typed('.element', {
+  			strings: ["A Python Developer .", "An AI Developer.", " A FullStark Developer.", "Fun To Work With...", "Jino Prince"],
+  			typeSpeed: 100,
+  			loop: true
+		});
+
+	</script>
+	<!-- <section>
+		<h1>bitcoin Price Predictor</h1>
+		<h1>Todays Bitcoin Price in UDS is: </h1>
+			<h1 id="ap"></h1>
+				<script type="text/javascript" >
+					fetch("https://api.coindesk.com/v1/bpi/currentprice.json")
+					.then(response => response.json())
+					.then(data => document.getElementById("ap").innerHTML=data.bpi.USD.rate)
+				</script>
+	</section> -->
+</body>
+</html>

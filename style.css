@@ -1,0 +1,162 @@
+*{
+	font-family: 'Blinker', sans-serif;
+}
+body{
+	margin: 0;
+	background: url("./web-bg.jpg");
+	position: relative;
+	background-position: center;
+	background-size: cover;
+}
+nav{
+	width: 100%;
+	height: 50px;
+	display: inline-flex;
+	justify-content: space-between;
+	box-shadow: 0 0 2px 0;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5) ;
+	position: relative;
+}
+nav i{
+	border: 2px solid #2ecc71;
+	border-radius: 50%;
+	padding: 10px;
+	margin-left: 30px;
+	cursor: pointer;
+}
+nav i:hover{
+	background: whitesmoke;
+	border: none;
+	transition: 1s;
+	transform: scale(1.2);
+}
+nav ul{
+	position: relative;
+	top: -3px;
+	display: inline-flex;
+	list-style: none;
+}
+nav ul li{
+	text-decoration: none;
+
+	padding: 0 10px;
+}
+nav ul li a{
+	color: whitesmoke;
+	text-decoration: none;
+	transition: 1s;
+}
+nav ul li a:hover{
+	font-weight: bolder;
+	transform: scale(1.5);
+}
+.container{
+	display: inline-block;
+	position: relative;
+	margin-top: 270px;
+	margin-left: 170px;
+}
+.hero-container{
+	display: grid;
+	margin: 0;
+	padding: 0;
+}
+.container .hero-container h4{
+	font-size: 26px;
+	font-weight: bolder;
+	padding: 0px;
+	margin: 0;
+}
+.container .hero-container h1{
+	position: relative;
+	font-size: 66px;
+	font-weight: bolder;
+	padding: 0px;
+	margin: 10px 0;
+}
+.container .hero-container h1 span{
+	color: #2ecc71;
+	font-size: 58px;
+
+}
+.container .hero-container .social{
+	display: inline-flex;
+	padding: 15px 0;
+}
+.container .hero-container .social i{
+	padding: 15px;
+	margin-right: 20px ;
+	border: 0px solid #2ecc71;
+	box-shadow: 0 0 5px 0;
+	border-radius: 50%;
+	background: transparent;
+	color: #2ecc71;
+}
+.container .hero-container .social i:hover{
+	transform: scale(1.2);
+	transition: 1.5s;
+	background: #2ecc71;
+	color: black;
+}
+.container .hero-container button{
+	width: 250px;
+	height: 42px;
+	border: 1px solid #2ecc71;
+	border-radius: 20px;
+	background: transparent;
+	color: white;
+	font-weight: bolder;
+	font-size: 18px;
+	box-shadow: 0 0 5px 0;
+	cursor: pointer;
+
+}
+.container .hero-container button:hover{
+	transform: scale(1.05);
+	transition: 1s;
+	box-shadow: 0 0 5px 0;
+	background: rgba(10, 180, 0, 0.4);
+	opacity: 0.7;
+	color: black;
+}
+body footer{
+	position: relative;
+	margin: 0 400px;
+}
+body footer p {
+	color: whitesmoke;
+	text-align: center;
+	padding: 10px;
+	font-weight: bolder;
+}
+
+@media screen and (max-width: 700px) {
+  nav ul{
+  	display: none;
+  }
+  .container{
+  	margin-left: 20px;
+  }
+  .container .hero-container h4{
+  	font-size: 20px;
+  }
+  .container .hero-container h1{
+  	font-size: 48px;
+  }
+  .container .hero-container h1 span{
+  	font-size: 38px;
+  }
+  .container .hero-container .social i{
+  	padding: 10px;
+  	margin-right: 8px;
+  }
+  .container .hero-container button{
+  	width: 220px;
+  	height: 38px;
+  }
+  body footer{
+	position: relative;
+	margin: 0 100px;
+  }
+}
